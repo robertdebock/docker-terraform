@@ -4,11 +4,12 @@ LABEL maintainer="Robert de Bock <robert@meinit.nl>"
 
 ENV container=docker
 
+# Add runtime requirements
+RUN apk add python3 py3-pip
+
 # Add az-cli
 RUN apk add \
-      py3-pip \
       python3-dev \
-      libffi \
       libffi-dev \
       openssl-dev \
       build-base \
