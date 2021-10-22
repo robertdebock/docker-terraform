@@ -15,5 +15,6 @@ RUN apk add \
       openssl-dev \
       build-base \
       --virtual build-dependencies && \
+    pip install --upgrade pip && \
     pip install azure-cli && \
     apk del build-dependencies
