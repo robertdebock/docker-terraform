@@ -1,7 +1,7 @@
-FROM hashicorp/terraform:1.1.9
+FROM hashicorp/terraform:1.3.2
 
 LABEL maintainer="Robert de Bock <robert@meinit.nl>"
-LABEL build_date="2022-05-16"
+LABEL build_date="2022-10-14"
 
 ENV container=docker
 
